@@ -6,7 +6,7 @@ do
     fi 
     
     python ../main_fedavg.py --trial=$trial \
-    --rounds=20 \
+    --rounds=200 \
     --num_users=100 \
     --frac=0.1 \
     --local_ep=10 \
