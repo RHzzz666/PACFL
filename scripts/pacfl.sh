@@ -13,7 +13,7 @@ do
     --local_bs=10 \
     --lr=0.01 \
     --momentum=0.5 \
-    --model=simple-cnn \
+    --model=lenet5 \
     --dataset=cifar10 \
     --datadir='../../data/' \
     --logdir='../../logs/' \

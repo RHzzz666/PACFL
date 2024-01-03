@@ -80,6 +80,11 @@ def init_nets(args, dropout_p=0.5):
                 output_size = 2
                 hidden_sizes = [16,8]
             net = FcNet(input_size, hidden_sizes, output_size, dropout_p).to(args.device)
+        elif args.model == "lenet5":
+            if args.dataset == "cifar10":
+                net = LeNet5Cifar10().to(args.device)
+            elif args.dataset == "cifar100":
+                net = LeNet5Cifar100().to(args.device)
         elif args.model == "vgg":
             net = vgg11().to(args.device)
         elif args.model == "simple-cnn":
