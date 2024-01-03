@@ -1,4 +1,4 @@
-for thresh in 50
+for thresh in 6
 do
     dir='../save_results/pacfl/noniid-#label2/cifar10'
     if [ ! -e $dir ]; then
