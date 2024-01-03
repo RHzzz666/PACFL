@@ -24,7 +24,7 @@ do
     --local_view \
     --noise=0 \
     --cluster_alpha=$thresh \
-    --n_basis=3 \
+    --n_basis=4 \
     --linkage='average' \
     --gpu=0 \
     --print_freq=10 \
