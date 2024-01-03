@@ -1,4 +1,4 @@
-for thresh in 7.2
+for thresh in 6.5
 do
     dir='../save_results/pacfl/noniid1-#label20/cifar100'
     if [ ! -e $dir ]; then
@@ -24,9 +24,9 @@ do
     --local_view \
     --noise=0 \
     --cluster_alpha=$thresh \
-    --n_basis=5 \
+    --n_basis=3 \
     --linkage='average' \
-    --gpu=0 \
+    --gpu=1 \
     --print_freq=10 \
     2>&1 | tee $dir'/'$thresh'_1.txt'
 
