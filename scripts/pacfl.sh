@@ -1,6 +1,6 @@
-for thresh in 5.1
+for thresh in 50
 do
-    dir='../save_results/pacfl/noniid-#label2/cifar10'
+    dir='../save_results/pacfl/noniid1-#label20/cifar100'
     if [ ! -e $dir ]; then
     mkdir -p $dir
     fi 
@@ -13,18 +13,18 @@ do
     --local_bs=10 \
     --lr=0.01 \
     --momentum=0.5 \
-    --model=lenet5 \
-    --dataset=cifar10 \
+    --model=resnet9 \
+    --dataset=cifar100 \
     --datadir='../../data/' \
     --logdir='../../logs/' \
     --savedir='../save_results/' \
-    --partition='noniid-#label2' \
+    --partition='noniid1-#label20' \
     --alg='pacfl' \
     --beta=0.1 \
     --local_view \
     --noise=0 \
     --cluster_alpha=$thresh \
-    --n_basis=5 \
+    --n_basis=3 \
     --linkage='average' \
     --gpu=0 \
     --print_freq=10 \
