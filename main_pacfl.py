@@ -309,7 +309,7 @@ for r in range(1):
     cnt+= 10
     print('')
     print('Adjacency Matrix')
-    print(adj_mat)
+    print(adj_mat.tolist())
     print('')
     print('Clusters: ')
     print(clusters)
